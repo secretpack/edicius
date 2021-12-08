@@ -1,0 +1,30 @@
+{
+  "name": "groupcounseling-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install-dependencies": "npm install",
+    "start": "sls offline start",
+    "deploy": "sls deploy",
+    "deploy-v": "sls deploy --verbose"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-apigatewaymanagementapi": "^3.43.0",
+    "@aws-sdk/client-dynamodb": "^3.44.0",
+    "aws-sdk": "^2.1041.0",
+    "fxsql": "^1.6.1",
+    "jsonwebtoken": "^8.5.1",
+    "login": "^0.8.0",
+    "pg": "^8.7.1",
+    "querystring": "^0.2.1",
+    "serverless": "^2.66.1",
+    "serverless-offline": "^8.3.1",
+    "sls": "^0.1.0"
+  },
+  "devDependencies": {
+    "serverless-dynamodb-local": "^0.2.40"
+  }
+}

@@ -1,0 +1,15 @@
+#connect:
+#  handler: service/chat_service.connect
+#  events:
+#    - websocket:
+#        route: $connect
+#disconnect:
+#  handler: service/chat_service.disconnect
+#  events:
+#    - websocket:
+#        route: $disconnect
+#broadcast:
+#  handler: service/chat_service.broadcast
+#  events:
+#    - websocket:
+#        route: $default

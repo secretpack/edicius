@@ -1,0 +1,15 @@
+modify-info:
+  handler: apis/setting/handler.modify_info
+  events:
+    - http:
+        path: setting/modify-info
+        method: get
+        cors: true
+
+alarm-setting:
+  handler: apis/setting/handler.alarm_setting
+  events:
+    - http:
+        path: setting/alarm-setting
+        method: get
+        cors: true

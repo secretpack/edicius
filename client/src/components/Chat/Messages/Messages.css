@@ -1,0 +1,8 @@
+.messages {
+  height: 300px;
+  flex: 5;
+  padding: 5%;
+  overflow: auto;
+  border-bottom: 1px solid #ddd;
+  /* overflow: scroll; */
+}

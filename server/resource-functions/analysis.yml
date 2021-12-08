@@ -1,0 +1,15 @@
+save-user-emotion:
+  handler: apis/analysis/handler.save_user_emotion
+  events:
+    - http:
+        path: analysis/save-user-emotion
+        method: get
+        cors: true
+
+create-file:
+  handler: apis/analysis/handler.create_file
+  events:
+    - http:
+        path: analysis/create-file
+        method: get
+        cors: true

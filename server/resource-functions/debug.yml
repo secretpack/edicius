@@ -1,0 +1,15 @@
+user_test:
+  handler: testcase/user_test.user_test
+  events:
+    - http:
+        path: testcase/user
+        method: get
+        cors: true
+
+post-test:
+  handler: testcase/user_test.post_test
+  events:
+    - http:
+        path: testcase/post-test
+        method: post
+        cors: true

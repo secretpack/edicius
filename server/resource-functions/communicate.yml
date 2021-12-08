@@ -1,0 +1,175 @@
+view-boards:
+  handler: apis/communicate/handler.view_boards
+  events:
+    - http:
+        path: board/view-boards
+        method: post
+        headers:
+          - Content-Type
+          - X-Amz-Date
+          - Authorization
+          - X-Api-Key
+          - X-Amz-Security-Token
+          - X-Amz-User-Agent
+          - Access-Control-Allow-Headers
+          - Access-Control-Allow-Origin
+        allowCredentials: false
+
+delete-board:
+  handler: apis/communicate/handler.deleteBoard
+  events:
+    - http:
+        path: board/deleteBoard
+        method: post
+        headers:
+          - Content-Type
+          - X-Amz-Date
+          - Authorization
+          - X-Api-Key
+          - X-Amz-Security-Token
+          - X-Amz-User-Agent
+          - Access-Control-Allow-Headers
+          - Access-Control-Allow-Origin
+        allowCredentials: false
+
+chat-room-initialize:
+  handler: apis/communicate/handler.chat_room_initialize
+  events:
+    - http:
+        path: chat/initialize
+        method: post
+        headers:
+          - Content-Type
+          - X-Amz-Date
+          - Authorization
+          - X-Api-Key
+          - X-Amz-Security-Token
+          - X-Amz-User-Agent
+          - Access-Control-Allow-Headers
+          - Access-Control-Allow-Origin
+        allowCredentials: false
+
+view-chats:
+  handler: apis/communicate/handler.view_chats
+  events:
+    - http:
+        path: communicate/view-chats
+        method: get
+        headers:
+          - Content-Type
+          - X-Amz-Date
+          - Authorization
+          - X-Api-Key
+          - X-Amz-Security-Token
+          - X-Amz-User-Agent
+          - Access-Control-Allow-Headers
+          - Access-Control-Allow-Origin
+        allowCredentials: false
+
+create-chat-room:
+  handler: apis/communicate/handler.create_chat_room
+  events:
+    - http:
+        path: communicate/create-chat-room
+        method: post
+        headers:
+          - Content-Type
+          - X-Amz-Date
+          - Authorization
+          - X-Api-Key
+          - X-Amz-Security-Token
+          - X-Amz-User-Agent
+          - Access-Control-Allow-Headers
+          - Access-Control-Allow-Origin
+        allowCredentials: false
+
+delete-chat-room:
+  handler: apis/communicate/handler.delete_chat_room
+  events:
+    - http:
+        path: communicate/delete-chat-room
+        method: get
+        cors: true
+
+join-chat-room:
+  handler: apis/communicate/handler.join_chat_room
+  events:
+    - http:
+        path: communicate/join-chat-room
+        method: get
+        cors: true
+
+save-chat-log:
+  handler: apis/communicate/handler.save_chat_log
+  events:
+    - http:
+        path: communicate/save-chat-log
+        method: get
+        cors: true
+
+get-chat-log:
+  handler: apis/communicate/handler.get_chat_log
+  events:
+    - http:
+        path: communicate/get-chat-log
+        method: get
+        cors: true
+
+room-join-test:
+  handler: apis/communicate/handler.room_join_test
+  events:
+    - http:
+        path: communicate/room-join-test
+        method: get
+        cors: true
+
+getBoard:
+  handler: apis/communicate/handler.getBoard
+  events:
+    - http:
+        path: board/getBoard
+        method: post
+        headers:
+          - Content-Type
+          - X-Amz-Date
+          - Authorization
+          - X-Api-Key
+          - X-Amz-Security-Token
+          - X-Amz-User-Agent
+          - Access-Control-Allow-Headers
+          - Access-Control-Allow-Origin
+        allowCredentials: false
+
+uploadBoard:
+  handler: apis/communicate/handler.uploadBoard
+  events:
+    - http:
+        path: board/upload
+        method: post
+        headers:
+          - Content-Type
+          - X-Amz-Date
+          - Authorization
+          - X-Api-Key
+          - X-Amz-Security-Token
+          - X-Amz-User-Agent
+          - Access-Control-Allow-Headers
+          - Access-Control-Allow-Origin
+        allowCredentials: false
+
+boardCountTest:
+  handler: apis/communicate/handler.boardCountTest
+  events:
+    - http:
+        path: board/boardCountTest
+        method: get
+        headers:
+          - Content-Type
+          - X-Amz-Date
+          - Authorization
+          - X-Api-Key
+          - X-Amz-Security-Token
+          - X-Amz-User-Agent
+          - Access-Control-Allow-Headers
+          - Access-Control-Allow-Origin
+        allowCredentials: false
